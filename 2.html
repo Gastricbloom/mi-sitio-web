@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnautica</title>
+    <link rel="shortcut icon" href="Site-logo.jpeg" type="image/x-icon" >
+    <link rel="stylesheet" href="styles (1).css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Subnautica</h1>
+        </section>
+        <img src="" alt="">
+    </header>
+    <nav>
+        <ul>
+            <img src="BorderHeads.gif" alt="" class="heads">
+            <li><a href="#noticias">Biomas</a></li>
+            <li><a href="#eventos">Flora</a></li>
+            <li><a href="#avisos">Fauna</a></li>
+            <img src="BorderHeads.gif" alt="" class="heads">
+        </ul>
+    </nav>
+    <main>
+
+        <section id="noticias">
+            <h2>Biomas</h2>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal1')">
+                <h3>Bosque de algas </h3>
+                <p>Los bosques de algas son uno de los biomas más diversos, debido a la variedad de fauna y flora que
+                    habitan en ellos. Estos biomas se caracterizan por la abundancia de las enredaderas y poseen un
+                    marcado tono verdoso en el agua.</p>
+                <img src="KelpForestTrue.jpeg" alt="">
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal2')">
+                <h3>Zona de Bulbos</h3>
+                <p>La Zona Bulbos se caracteriza por pequeñas fisuras y salientes en un área similar al de unas dunas
+                    arenosas. También es rica en pequeñas algas marrones y una gran variedad de plantas con tonalidades
+                    azul-morado, la mas notable siendo el Arbusto Bulbo.</p>
+                <img src="BulbZoneTrue.jpeg" alt="">
+            </div>
+
+        </section>
+        <section id="eventos">
+            <h2>Flora</h2>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal3')">
+                <h3>Raíz de sangre</h3>
+                <p>Las sanguinarias son plantas grandes con forma de raíces que emiten un brillo bioluminiscente de
+                    color blanco verdoso . Se extienden de una pared a otra, o desde el techo de la cueva hasta el
+                    fondo. Cada raíz está formada por múltiples raíces más pequeñas entrelazadas entre sí.</p>
+                <img src="Bloodroot_Flora.jpeg" alt="">
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal4')">
+                <h3>Árbol membrana</h3>
+                <p>Esta entidad desafía una categorización clara. Consiste en más de una especie de coral que trabajan
+                    en conjunto para crear un microcosmos aislado encerrado dentro de una membrana translúcida. Las
+                    condiciones homeostáticas internas, que se encuentran creciendo exclusivamente en rocas basálticas
+                    en los grandes arrecifes, son considerablemente más cálidas y más densas con vida microbiana que el
+                    ambiente exterior, y la fauna de color púrpura brillante del interior probablemente morirá
+                    rápidamente si se expone.</p>
+                <img src="Membrain_Tree_Flora.jpeg" alt="">
+            </div>
+
+
+        </section>
+        <section id="avisos">
+            <h2>Fauna</h2>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal5')">
+                <h3>Dragon Marino</h3>
+                <p>Usa sus brazos y tentáculos para nadar a gran velocidad es capaz de ejercer más de 300 toneladas de
+                    fuerza al embestir.</p>
+                <img src="Imagen2.jpg" alt="Imagen centrada">
+
+            </div>
+            <div class="articulo" onclick="mostrarArticulo(this, 'modal6')">
+                <h3>Leviatán Gargantúa</h3>
+                <p>El gigantesco Leviatán es inmune a la mayoría de los ataques convencionales, gracias a su gran tamaño
+                    y su piel resistente.</p>
+                <img src="Imagen3.jpg" alt="">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="triple+tulip.gif" alt="" class="tulip">
+            <img src="LargeBorder_file.png" alt="" class="borde">
+        </section>
+
+
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal1')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+            </div>
+        </div>
+
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal2')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+            </div>
+        </div>
+
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal3')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+                <audio class="modal-audio" controls>
+                    <source class="modal-audio-source" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="modal" id="modal4">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal4')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+                <audio class="modal-audio" controls>
+                    <source class="modal-audio-source" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="modal" id="modal5">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal5')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+            </div>
+        </div>
+
+        <div class="modal" id="modal6">
+            <div class="modal-content">
+                <span class="close-button" onclick="cerrarModal('modal6')">×</span>
+                <h3 class="modal-titulo"></h3>
+                <p class="modal-contenido"></p>
+                <img class="modal-imagen" alt="">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
